@@ -1,0 +1,25 @@
+{
+    "manifest_version" : 3,
+    "version" : "1.0",
+    "name" : "VoiceX",
+    "description" : "This is a voice to text extension, that helps create tasks or todos with your voice.",
+    "author" : "olanrewaju",
+    "action" : {
+        "default_popup" : "index.html",
+        "default_icon" : "images/star-icon.png",
+        "default_name" : "VoiceX"
+    },
+    "permissions" : [
+        "tabs"
+    ],
+    "background.service_worker" : {
+
+        "scripts" : [
+            "permissions.js"
+        ],
+
+        "persistence" : false
+    }
+
+
+}
