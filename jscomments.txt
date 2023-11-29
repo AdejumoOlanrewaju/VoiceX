@@ -1,0 +1,98 @@
+// for(let [index, item] of store.entries()){
+//     console.log(index + ": " + item)
+// }
+
+
+// for(let btn of taskBtn){
+    
+// }
+
+// let taskBtn;
+// taskBtn = document.querySelectorAll(".task-btn")
+//     for(let btn of taskBtn){
+//         btn.addEventListener("click", () => {
+//             let btnContainer = btn.parentElement
+//             let parent = btnContainer.parentElement
+//             let text = parent.querySelector("p")
+//             console.log(text.textContent)
+//             text.style.textDecoration = "line-through"
+//             // store.splice(index, 1)
+//             // localStorage.setItem("store", JSON.stringify(store))
+//             console.log(store)
+//             // localStorage.clear()
+//             // console.log(store)
+//         })
+//         // console.log(btn + ":" + index)
+//         // console.log(btn)
+        
+// }
+
+
+// if(taskBtn.length > 1){
+//     for(let btn of taskBtn){
+//         btn.addEventListener("click", () => {
+//             let btnContainer = btn.parentElement
+//             let parent = btnContainer.parentElement
+//             let text = parent.querySelector("p")
+//             console.log(text.textContent)
+//             text.style.textDecoration = "line-through"
+//             // localStorage.clear()
+//             // console.log(store)
+//             // store.splice(index, 1)
+//             // console.log(store)
+//         })
+        
+//     }
+
+// }else{
+//     taskBtn = document.querySelector(".task-btn")
+//     taskBtn.addEventListener('click', ()=> {
+//         console.log("seen")
+//     })
+// }
+
+
+
+// num = [1, 2, 4]
+// let index = num.indexOf(1)
+// num.splice(1, 1)
+
+// console.log(num.entries())
+// if (taskBtn.length > 1){
+//     for(let btn of taskBtn){
+//         btn.addEventListener("click", ()=>{
+//             console.log("cleared")
+//         })
+//     }
+// }
+// for (let [index, n] of num.entries()){
+//     console.log(n)
+//     console.log(index)
+    
+// }
+
+
+// num.splice(2, 1)
+// num.splice(1, 1)
+// console.log(num)
+
+   // let result = store.filter(n => n !== text.textContent)
+            // console.log(result)
+            // store = result
+            // console.log(store)
+
+
+            // let itemLen = store.indexOf(store[i])
+            // if (i >= itemLen ){
+            //     i--
+            // }
+
+            // if(i == -1){
+            //     i = store.length
+            // }
+            // store.splice(i, 1)
+            // console.log(store)
+            // console.log(store[i])
+            // console.log(i)
+            // console.log(itemLen)
+            // console.log(index + ": " + btn)

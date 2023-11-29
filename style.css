@@ -23,10 +23,12 @@ button:active{
 
 .wrapper{
     width : 400px;
-    min-height : 200px;
-    padding : 20px;
+    height: fit-content;
+    max-height: 400px;
+    padding : 15px 20px;
     background : #111;
     color : white;
+    overflow-y : auto;
 }
 
 .head-content{
@@ -61,16 +63,13 @@ button:active{
     color: rgba(255,255,255,.8);
 }
 
-.task-list{
-    padding : 0;
-}
 
 .task{
     display : flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     background-color: #2f3131d4;
-    padding: 12px 15px;
+    padding: 10px 15px;
     border-radius: 10px;
 
 }
@@ -83,10 +82,22 @@ button:active{
     color: rgba(255,255,255,.4);
 }
 
+.task-list{
+    padding : 0;
+}
+
 .task-text{
     font-size : 18px;
     margin : 0;
     padding-right : 5px;
+}
+
+.task-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap : 10px;
 }
 
 .task-btn{
@@ -103,3 +114,24 @@ button:active{
     font-size : 16px;
 }
 
+.edit-link{
+    cursor : pointer;
+}
+
+.swipe{
+    animation : fadeout 1s ease forwards;
+}
+
+@keyframes fadeout {
+    from{
+        opacity : 1;
+        transform: translateY(0);
+
+    }
+
+    to{
+        transform: translateY(-10px);
+        opacity : 0;
+
+    }
+}
