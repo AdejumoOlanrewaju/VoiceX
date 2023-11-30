@@ -24,11 +24,11 @@ button:active{
 .wrapper{
     width : 400px;
     height: fit-content;
-    max-height: 400px;
+    max-height: 450px;
     padding : 15px 20px;
     background : #111;
     color : white;
-    overflow-y : auto;
+    /* overflow-y : auto; */
 }
 
 .head-content{
@@ -83,13 +83,31 @@ button:active{
 }
 
 .task-list{
-    padding : 0;
+    padding: 0;
+    height: fit-content;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.task-list::-webkit-scrollbar{
+    width : 10px;
+    background : rgba(255,255,255,.4);
+    border-radius : 10px;
+}
+
+.task-list::-webkit-scrollbar-thumb{
+    height: 20px;
+    background : rgba(255,255,255,.2);
+
+
 }
 
 .task-text{
     font-size : 18px;
     margin : 0;
-    padding-right : 5px;
+    padding : 5px;
+    max-width: 240px;
+    word-wrap: break-word;
 }
 
 .task-btn-container{
@@ -116,6 +134,10 @@ button:active{
 
 .edit-link{
     cursor : pointer;
+    color : rgba(255,255,255,.5);
+    font-size : 15px;
+    letter-spacing: .5px;
+
 }
 
 .swipe{

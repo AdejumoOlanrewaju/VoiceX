@@ -30,14 +30,14 @@ function renderLists(arr){
 
     let taskBtn = document.querySelectorAll(".task-btn")
     taskText = document.querySelectorAll(".task-text")
-    let editLink = document.querySelectorAll(".edit-link")
+    editLink = document.querySelectorAll(".edit-link")
     
-    taskBtnFunc(taskBtn)
     editText(editLink)
-    saveEdit(taskText)
+    taskBtnFunc(taskBtn)
 
 
 }
+
  function editText(elem){
      for(let link of elem){
      
@@ -47,24 +47,36 @@ function renderLists(arr){
              let parent = linkContainer.parentElement
              let text = parent.querySelector("p")
              text.contentEditable = true
+             text.style.backgroundColor = "#2b2b67"
              // console.log(text)
              console.log("click")
+
+             saveEdit()
          })
      }
      
     //  console.log(editLink)
  }
-function saveEdit(elem){
+ 
+function saveEdit(){
+    let elem = taskText
+    let text;
     window.addEventListener("click", function(event){
         if(!event.target.closest(".edit-link") && !event.target.closest(".task-btn")){
             console.log("we are there")
             for(let i = 0; i < elem.length; i++){
-                let text = elem[i]
+                text = elem[i]
                 store[i] = text.textContent
+                // text.contentEditable = false
                 // console.log(store[i])
                 // console.log(text)
             } 
             localStorage.setItem("store", JSON.stringify(store))
+        }
+        
+        if(!event.target.closest(".task-list")){
+            text.style.backgroundColor = "transparent"
+            console.log("hi")
         }
         // console.log(store)
     })
