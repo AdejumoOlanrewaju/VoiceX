@@ -51,14 +51,14 @@ function renderLists(arr){
              // console.log(text)
              console.log("click")
 
-             saveEdit()
+             saveEdit(text)
          })
      }
      
     //  console.log(editLink)
  }
  
-function saveEdit(){
+function saveEdit(taskWords){
     let elem = taskText
     let text;
     window.addEventListener("click", function(event){
@@ -74,9 +74,10 @@ function saveEdit(){
             localStorage.setItem("store", JSON.stringify(store))
         }
         
-        if(!event.target.closest(".task-list")){
-            text.style.backgroundColor = "transparent"
+        if(!event.target.closest(".task")){
+            taskWords.style.backgroundColor = "transparent"
             console.log("hi")
+            console.log(text)
         }
         // console.log(store)
     })
