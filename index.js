@@ -134,7 +134,7 @@ let startBtn = document.querySelector(".action-btn")
 startBtn.addEventListener("click", () => {
     
     recognition.onstart = () => {
-        action.textContent = "Loading"
+        action.textContent = "Say the task"
         output.textContent = ""
         allowText.textContent = ''
     }
