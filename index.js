@@ -140,7 +140,7 @@ startBtn.addEventListener("click", () => {
     }
     
     recognition.onresult = (event) => {
-        action.textContent = "Here we are"
+        action.textContent = "Here is your result"
         let transcript = event.results[0][0].transcript
         store.unshift(transcript)
         localStorage.setItem("store", JSON.stringify(store))
