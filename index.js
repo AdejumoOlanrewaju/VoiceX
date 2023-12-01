@@ -106,7 +106,7 @@ function taskBtnFunc(elem){
             btnContainer.classList.add("swipe")
             let timeId = setTimeout(() => {
                 parent.style.display = "none"
-            }, 500)
+            }, 400)
 
             if(store.length == 0){
                 console.log("store is empty")

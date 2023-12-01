@@ -6,7 +6,7 @@
     "author" : "olanrewaju",
     "action" : {
         "default_popup" : "index.html",
-        "default_icon" : "images/star-icon.png",
+        "default_icon" : "images/speech-icon.png",
         "default_name" : "VoiceX"
     },
     "permissions" : [

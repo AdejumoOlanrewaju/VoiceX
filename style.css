@@ -142,7 +142,7 @@ button:active{
 }
 
 .swipe{
-    animation : fadeout 1s ease forwards;
+    animation : fadeout .5s ease forwards;
 }
 
 @keyframes fadeout {
